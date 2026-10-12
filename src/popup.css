@@ -1,0 +1,23 @@
+:root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #222c38; background: #f8fafb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; width: 370px; }
+main { padding: 24px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 30px; }
+.brand-mark { font-size: 35px; font-weight: 750; position: relative; width: 32px; line-height: 1; }
+.brand-mark span { color: #be7700; position: absolute; font-size: 22px; top: 20px; left: 7px; }
+h1 { font-size: 17px; line-height: 1.3; margin: 0; font-weight: 650; letter-spacing: -.4px; }
+.eyebrow, .result-label { font-size: 10px; font-weight: 650; letter-spacing: 1.3px; color: #637080; margin: 0 0 6px; }
+label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 8px; }
+select { width: 100%; padding: 12px 10px; font: inherit; font-size: 12px; border: 1px solid #c8cfd6; border-radius: 7px; background: white; color: inherit; cursor: pointer; }
+select:focus-visible, button:focus-visible { outline: 3px solid #d59625; outline-offset: 3px; }
+.result { padding: 23px 0; margin-top: 7px; min-height: 130px; }
+h2 { font-size: 23px; letter-spacing: -.7px; line-height: 1.25; margin: 0 0 10px; }
+.email { font-size: 15px; font-weight: 600; overflow-wrap: anywhere; margin: 0 0 10px; }
+.description { font-size: 13px; line-height: 1.55; color: #596574; margin: 0; }
+.freshness { font-size: 11px; color: #677484; margin: 16px 0 0; }
+button { width: 100%; padding: 13px 15px; display: flex; justify-content: space-between; font: inherit; font-size: 13px; font-weight: 600; background: #263343; color: white; border: 0; border-radius: 7px; cursor: pointer; transition: background .15s; }
+button:hover:not(:disabled) { background: #405168; }
+button:disabled { background: #e1e6eb; color: #687585; cursor: default; }
+button span { font-size: 18px; line-height: 15px; }
+.notice { font-size: 12px; line-height: 1.5; color: #845314; background: #fff3d9; padding: 10px; border-radius: 5px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }

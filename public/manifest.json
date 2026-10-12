@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Account Detector",
+  "version": "1.3.3",
+  "minimum_chrome_version": "116",
+  "description": "Check Amazon marketplace sessions in the background. Results stay on this device.",
+  "permissions": ["storage", "offscreen", "cookies", "alarms"],
+  "host_permissions": [
+    "https://*.amazon.com/*",
+    "https://*.amazon.co.uk/*",
+    "https://*.amazon.de/*",
+    "https://*.amazon.it/*",
+    "https://*.amazon.fr/*"
+  ],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Amazon Account Detector", "default_popup": "index.html" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; img-src 'self' data:; frame-src 'none'"
+  }
+}
